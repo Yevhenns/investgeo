@@ -1,8 +1,6 @@
-:root {
-    --main-text-color: #040511;
-    --main-background-color: #015af2;
-    --secondary-color: #ffffff;
-    --hover: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    --shadow-transition: box-shadow 250ms linear;
-    --scale-transition: scale 250ms linear;
-  }
+$main-text-color: #040511;
+$main-background-color: #015af2;
+$secondary-color: #ffffff;
+$hover: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$shadow-transition: box-shadow 250ms linear;
+$scale-transition: scale 250ms linear;

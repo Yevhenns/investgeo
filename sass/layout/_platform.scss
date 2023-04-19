@@ -1,40 +1,42 @@
-.section-title {
-  font-weight: 600;
-  font-size: 30px;
-  color: var(--main-text-color);
-  margin-bottom: 30px;
-  @media screen and (min-width: 1060px) {
-    font-size: 50px;
-  }
-  @media screen and (min-width: 1250px) {
-    font-size: 95px;
-  }
-}
-.section-icon {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-}
-.platform-text {
-  color: var(--main-text-color);
-  @media screen and (max-width: 1060px) {
-    font-size: 20px;
-  }
-}
-.platform-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 80px;
-  justify-content: center;
-  margin-bottom: 70px;
-}
-.platform-section {
+.platform {
   margin-bottom: 145px;
   text-align: center;
-}
-.platform-list-icon {
-  transition: var(--scale-transition);
-}
-.platform-list-icon:hover {
-  scale: 1.1;
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    color: $main-text-color;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1060px) {
+      font-size: 50px;
+    }
+    @media screen and (min-width: 1250px) {
+      font-size: 95px;
+    }
+  }
+  &__text {
+    color: $main-text-color;
+    margin-bottom: 80px;
+    @media screen and (max-width: 1060px) {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  &__logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    margin-bottom: 70px;
+    &__icon {
+      transition: $scale-transition;
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
 }
